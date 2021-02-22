@@ -7,7 +7,7 @@ Requires Python 3.x to build.
 ```
 pip install mkdocs-material
 git clone --recursive https://github.com/molstar/viewer-docs.git
-cd docs
+cd viewer-docs
 ```
 
 For local preview, run
