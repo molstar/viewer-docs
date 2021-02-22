@@ -1,0 +1,25 @@
+site_name: Mol* Viewer Documentation
+theme:
+  name: null
+  custom_dir: mkdocs-material/material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Necessary for search to work properly
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    logo: logo
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+repo_url: https://github.com/molstar/viewer-docs
