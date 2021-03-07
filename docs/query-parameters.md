@@ -1,5 +1,5 @@
 
-# Mol* Viewer query parameters
+# Query Parameters
 
 ## Parameters
 
