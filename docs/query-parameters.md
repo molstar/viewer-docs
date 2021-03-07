@@ -33,7 +33,7 @@ URL pointing to a structure file.
 
     structure-url=http://files.rcsb.org/download/6Z1W.cif
 
-## `structure-url-format`
+### `structure-url-format`
 Allowed values `mmcif`, `pdb`, `gro`, `sdf`, `mol2`, ...
 
     structure-url-format=mmcif
