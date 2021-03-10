@@ -4,17 +4,22 @@
 ## Parameters
 
 ### `hide-controls`
-This will hide the UI panels on all sides. If `1` the controls are hidden. For all other values the controls are shown. By default the controls are shown.
+This will hide the UI panels on all sides. If `1` the controls are hidden. For all other values the controls are shown. By default the controls are shown. Clicking on the wrench icon in the top right of the canvas will toggle the visibility of the controls.
 
     hide-controls=1
+    
+### `collapse-left-panel`
+This will collapse the left UI panel to a vertical icon bar. If `1` the left panel is collapsed. For all other values the left panel is fully shown. By default the left panel is fully are shown. Clicking on an icon in the vertical icon bar will toggle between the collapsed and fully shown state.
+
+    collapse-left-panel=1
 
 ### `pdb-provider`
-Where to load PDB entries from. Allowed values are `pdbe` and `rcsb`. Defaults to `pdbe`.
+Where to load PDB entries from. Allowed values are `pdbe` and `rcsb`. Defaults to `pdbe`. From Europe, `pdbe` generally offers faster PDB downloads. From the Americas, `rcsb` is faster.
 
     pdb-provider=pdbe
 
 ### `emdb-provider`
-Where to load EMDB entries from. Allowed values are `pdbe` and `rcsb`. Defaults to `pdbe`.
+Where to load EMDB entries from. Allowed values are `pdbe` and `rcsb`. Defaults to `pdbe`. From Europe, `pdbe` generally offers faster EMDB downloads. From the Americas, `rcsb` is faster.
 
     emdb-provider=pdbe
 
@@ -31,7 +36,7 @@ Allowed values are `molj` and `molx`.  Defaults to `molj`.
 ### `structure-url`
 URL pointing to a structure file.
 
-    structure-url=http://files.rcsb.org/download/6Z1W.cif
+    structure-url=https://files.rcsb.org/download/6Z1W.cif
 
 ### `structure-url-format`
 Allowed values `mmcif`, `pdb`, `gro`, `sdf`, `mol2`, ...
