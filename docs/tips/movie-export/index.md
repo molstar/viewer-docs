@@ -26,3 +26,8 @@ To export a spinning molecule video in #molstar
 https://molstar.org/
 
 ![movie export settings](movie-settings.png)
+
+# Final notes
+
+- Movie rendering and export are purely in the Browser. Your data stays on your machine
+- View the #molstar state online https://molstar.org/viewer/?snapshot-url=https://molstar.org/viewer-docs/tips/movie-export/5YH2-illustrative.molx&snapshot-url-type=molx
