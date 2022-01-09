@@ -19,6 +19,9 @@ theme:
   favicon: assets/favicon.png
   icon:
     logo: logo
+  features:
+    - navigation.instant
+    - navigation.tracking
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
