@@ -5,7 +5,7 @@ A pictured guide for creating @dsgoodsell`s iconic illustrative style in #molsta
 
 We will use the Golgi Casein Kinase (PDB 5yh2) #motm as an example https://pdb101.rcsb.org/motm/265.
 
-View the final state online https://molstar.org/viewer/?snapshot-url=https://molstar.org/viewer-docs/tips/movie-export/5YH2-illustrative.molx&snapshot-url-type=molx
+View the final state online https://molstar.org/viewer/?snapshot-url=https://molstar.org/viewer-docs/tips/illustrative-style-export/5YH2-illustrative.molx&snapshot-url-type=molx
 
 ![5YH2](5YH2.png)
 
