@@ -10,11 +10,31 @@ View the final state online https://molstar.org/viewer/?snapshot-url=https://mol
 ![5YH2](5YH2.png)
 
 
+# Use preset
+
+The easiest way is to use the "Illustrative" preset from the Presets in the Components panel. This applies the overall illustrative style. You can still adjust the displayed chains (step 4 & 5) and the color theme options (step 6 to 8) as outlined in the full guide.
+
+![Illustrative preset](illustrative-preset.png)
+
+
+# Coloring styles
+
+The "Illustrative" color theme (see step 6 to 8 in the full guide) has 5 "Style" options. All color carbons lighter but the base color is differently set.
+
+- "Uniform": Single color
+- "Chain Id": Color per chain (label/auth)
+- "Entity Id": Color per entity (the default)
+- "Entity Source": Color per entity source (for chimeras)
+- "Molecule Type": Color by protein/RNA/DNA/...
+
+![Style options](style-options.png)
+
+
 # Load PDB and reset style
 
 1. Load PDB 5YH2 using the Download Structure action in the top left
 2. Clear all visuals by selecting the "Empty" preset in the Components panel
-3. Add a spacefill representation for everything
+3. Add a spacefill representation for everything:
 
 ![Load structure](load-structure.png)
 
@@ -40,8 +60,12 @@ View the final state online https://molstar.org/viewer/?snapshot-url=https://mol
 # Adjust coloring
 
 6. Select the "Illustrative" color theme for our "Spacefill" representation
-7. Change the "Asym Id" option to "Label"
+7. Change the "Style" option to "Chain Id" and set the "Asym Id" option to "Label"
 8. Enable theme legend; drill down to color list; change colors for our chains
+
+Chain C: (101, 153, 255)
+Chain D: (79, 231, 156)
+Chain F: (255, 76, 255)
 
 ![Color illustrative](color-illustrative.png)
 
