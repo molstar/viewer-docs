@@ -10,9 +10,9 @@ View the final state online https://molstar.org/viewer/?snapshot-url=https://mol
 ![5YH2](5YH2.png)
 
 
-# Use preset
+# Use Quick Style
 
-The easiest way is to use the "Illustrative" preset from the Presets in the Components panel. This applies the overall illustrative style. You can still adjust the displayed chains (step 4 & 5) and the color theme options (step 6 to 8) as outlined in the full guide.
+The easiest and fastest way is to use the "Illustrative" style from the Quick Styles panel. This applies the overall illustrative style. You can still adjust the displayed chains (step 4 & 5) and the color theme options (step 6 to 8) as outlined in the full guide.
 
 ![Illustrative preset](illustrative-preset.png)
 
