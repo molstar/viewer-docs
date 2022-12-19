@@ -22,4 +22,5 @@ Whenever data are requested by the client module, the server module performs a r
 
 ![schema](schema.png)
 
-The pre-processing and data delivery approaches used by Mol\*VS are key to the ability to enable fast and interactive visualization in the web browser irrespective of the size of the original data set. Due to its perfect integration within the Mol\* ecosystem, Mol\*VS effectively enables web-based concomitant and interactive visualization of 3D volumes of cells, organelles, and molecules together with volume segmentations and their annotations, as well as 3D models of molecules fitted inside such volumes, together with their residue-level annotations and atomic-level information.
+The pre-processing and data delivery approaches used by Mol\*VS are key to the ability to enable fast and interactive visualization in the web browser irrespective of the size of the original data set. Due to its perfect integration within the Mol\* ecosystem, Mol\*VS effectively enables web-based concomitant and interactive visualization of 3D volumes of cells, organelles, and molecules together with volume segmentations and their annotations.
+
