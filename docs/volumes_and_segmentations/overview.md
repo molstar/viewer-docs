@@ -14,13 +14,13 @@ Mol\*VS takes input in [EMDB-SFF](http://europepmc.org/article/MED/28682240) and
 
 First, Mol\*VS processes the volumetric and segmentation data into an internal format ([Zarr](https://zarr.readthedocs.io/en/stable/)). These pre-processed data are stored in the internal database in both original and downsampled forms, together with pre-computed statistics, metadata, and internal annotations for each data set. This step happens only when entries in the internal database need to be added/removed/changed.
 
-![downsamplings_1](downsamplings_1.png)
+![downsamplings_1](overview/downsamplings_1.png)
 
-![downsamplings_2](downsamplings_2.png)
+![downsamplings_2](overview/downsamplings_2.png)
 
 Whenever data are requested by the client module, the server module performs a relevant query of the internal database and then packs and delivers the requested data to the client module, which then unpacks the data and feeds it to Mol\* Viewer. 
 
-![schema](schema.png)
+![schema](overview/schema.png)
 
 The pre-processing and data delivery approaches used by Mol\*VS are key to the ability to enable fast and interactive visualization in the web browser irrespective of the size of the original data set. Due to its perfect integration within the Mol\* ecosystem, Mol\*VS effectively enables web-based concomitant and interactive visualization of 3D volumes of cells, organelles, and molecules together with volume segmentations and their annotations.
 

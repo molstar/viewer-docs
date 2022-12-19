@@ -8,18 +8,18 @@ One important limitation is related to the data structures currently used by Mol
 Finally, some limitations are related to the current state of Mol\* Viewer. Because the source data vary substantially, it has so far not been possible to establish default settings that work equally well for all data sets and all machines.
 
 If the **State Tree** does not show any 3D representation, you can wait a bit or create it yourself:
-![general](general.png)
+![general](known_issues_and_limitations/general.png)
 If you encounter other trouble rendering, please try changing one or more settings as described below. 
 
 ## GPU support
 Some graphics cards may fail to render certain data (e.g., empiar-10819) when using default settings. If the **Mol\* Viewer Log Panel** (bottom) does not report any error but you cannot see anything in the **3D Canvas** (center), go to the **Main Menu** (top left), open the State Tree, navigate to the **Isosurface** 3D representation and try turning **GPU support off**.
-![gpu_support](gpu_support.png)
+![gpu_support](known_issues_and_limitations/gpu_support.png)
 
 ## Isosurface
 Some data sets may fail to render or may render too much noise when using the default isosurface settings. If the **Mol\* Viewer Log Panel** (bottom) does not report any error but you cannot see anything or you see too much noise in the **3D Canvas** (center), go to the **Main Menu** (top left), open the **State Tree**, navigate to the **Isosurface** 3D representation and try tuning the **Iso Value**.
-![isovalue](isovalue.png)
+![isovalue](known_issues_and_limitations/isovalue.png)
 
 ## Direct volume
 Some data sets may fail to render or may render too much noise when using isosurface render. If the **Mol\* Viewer Log Panel (bottom)** does not report any error but you are not satisfied with the representation in the **3D Canvas** (center), go to the **Main Menu** (top left), open the **State Tree**, navigate to the **Isosurface 3D representation** and change from **Isosurface** to **Direct Volume**. You may also need to fiddle with the **Control Points** until you are satisfied with the result.
-![direct_volume_1](direct_volume_1.png)
-![direct_volume_2](direct_volume_2.png)
+![direct_volume_1](known_issues_and_limitations/direct_volume_1.png)
+![direct_volume_2](known_issues_and_limitations/direct_volume_2.png)
