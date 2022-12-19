@@ -1,6 +1,0 @@
-# Overview
-## Why
-
-## What
-
-## How
