@@ -1,4 +1,4 @@
-# Running Mol\*VS locally
+# Running Mol*VS locally
 
 ## Is this for you?
 Since Mol* is an open-source project with a permissive MIT license, you can set up and use your own independent instance of Mol\*VS. This tutorial will help you navigate the technical steps required for you to run Mol\*VS locally. But first, check if you really need to do this.
