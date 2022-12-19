@@ -22,6 +22,34 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
+nav:
+  - Home: 'index.md'
+  - Images/Movies: 'Images_Movies.md'
+  - Common Actions: 'common-actions.md'
+  - Examples: 'examples.md'
+  - FAQ: 'faqs-scenarios.md'
+  - Glossary: 'glossary.md'
+  - Integrations: 'integrations.md'
+  - Making Selections: 'making-selections.md'
+  - Managing the display: 'managing-the-display.md'
+  - Maneuvering in Mol*: 'maneuvering-in-mol_.md'
+  - Mol* Cheat Sheet: 'mol_-cheat-sheet.md'
+  - Navigating by Sequence: 'navigating-by-sequence.md'
+  - Query Parameters: 'query-parameters.md'
+  - Tips:
+    - Illustrative Style: 'tips/illustrative-style/index.md'
+    - Measurements: 'tips/measurements/index.md'
+    - Movie Export: 'tips/movie-export/index.md'
+    - Quick Styles: 'tips/quick-styles/index.md'
+    - URL Parameters: 'tips/url-parameters/index.md'
+    - Version 3: 'tips/v3/index.md'
+  - Volumes and Segmentations:
+    - Overview: 'volumes_and_segmentations/overview.md'
+    - Database Contents: 'volumes_and_segmentations/database-contents.md'
+    - How To: 'volumes_and_segmentations/how-to.md'
+    - Known Issues: 'volumes_and_segmentations/known-issues.md'
+    - Running Locally: 'volumes_and_segmentations/running-molstarvs-locally.md'
+
 markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
