@@ -16,7 +16,7 @@ Some graphics cards may fail to render certain data (e.g., empiar-10819) when us
 ![gpu_support](gpu_support.png)
 
 ## Isosurface
-Some data sets may fail to render or may render too much noise when using the default isosurface settings. If the Mol\* Viewer Log Panel (bottom) does not report any error but you cannot see anything or you see too much noise in the 3D Canvas (center), go to the Main Menu (top left), open the State Tree, navigate to the Isosurface 3D representation and try tuning the Iso Value.
+Some data sets may fail to render or may render too much noise when using the default isosurface settings. If the **Mol\* Viewer Log Panel** (bottom) does not report any error but you cannot see anything or you see too much noise in the **3D Canvas** (center), go to the **Main Menu** (top left), open the **State Tree**, navigate to the **Isosurface** 3D representation and try tuning the **Iso Value**.
 ![isovalue](isovalue.png)
 
 ## Direct volume
