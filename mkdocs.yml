@@ -45,10 +45,11 @@ nav:
     - Version 3: 'tips/v3/index.md'
   - Volumes and Segmentations:
     - Overview: 'volumes_and_segmentations/overview.md'
-    - Database Contents: 'volumes_and_segmentations/database-contents.md'
     - How To: 'volumes_and_segmentations/how-to.md'
+    - Examples: 'volumes_and_segmentations/examples.md'
+    - Database Contents: 'volumes_and_segmentations/database-contents.md'
     - Known Issues: 'volumes_and_segmentations/known-issues.md'
-    - Running Locally: 'volumes_and_segmentations/running-molstarvs-locally.md'
+    - Hosting Locally: 'volumes_and_segmentations/running-molstarvs-locally.md'
 
 markdown_extensions:
   - pymdownx.highlight
