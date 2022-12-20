@@ -5,12 +5,12 @@ Volume segmentation data are increasingly more available in public databases suc
 ## What
 [Mol\*VS](https://molstarvolseg.ncbr.muni.cz/) is an open-source extension of [Mol\* Viewer](https://academic.oup.com/nar/article/49/W1/W431/6270780) dedicated to real-time visualization of large-scale volumetric data from cryo-EM, light microscopy, volume-EM, and other imaging experiments, as well as their segmentations and biological annotations. Mol\*VS pre-processes volumetric and segmentation data and delivers it to a dedicated Mol\* Viewer extension so that even very large datasets can be visualized in real time and alongside macromolecular structure data with residue and atomic-level information.
 
-Mol\*VS has been running since September 2022 and provides seamless access to all [curated segmentation datasets available in EMDB and EMPIAR](https://www.ebi.ac.uk/empiar/volume-browser/). As availability of segmentation data remains scarce, we also provide a few entries derived from EMDB, BioImage Archive, and Image Data Resource datasets. Individual users and platforms providing access to cell imaging data can freely use a local instance of Mol\*VS.
+Mol\*VS has been running since September 2022 and provides seamless access to all [curated segmentation datasets available in EMDB and EMPIAR](https://www.ebi.ac.uk/empiar/volume-browser/). As availability of segmentation data remains scarce, we also provide a few entries derived from EMDB, BioImage Archive, and Image Data Resource datasets. Individual users and platforms providing access to cell imaging data can freely host a local instance of Mol\*VS.
 
 ## How
 Mol\*VS has four major components, namely a preprocessing module, an internal database with preprocessed data, a server module that queries the internal database, and a client module that requests and interprets the data received so that it can be displayed.
 
-Mol\*VS takes input in [EMDB-SFF](http://europepmc.org/article/MED/28682240) and segmentation formats (.am, .mod, .seg, .stl) converted to [EMDB-SFF Toolkit](https://sfftk.readthedocs.io/en/latest/) built into Mol\*VS. We also handle [3D map volumes from EM reconstruction](https://www.ebi.ac.uk/emdb/documentation) and added experimental support for [OME-NGFF](https://www.nature.com/articles/s41592-021-01326-w), focused on light microscopy. These formats were devised by international consortia following ongoing consultations with the scientific community, aiming to support the unification of storage and delivery of bioimaging data and metadata in an accessible, traceable, and scalable fashion.
+Mol\*VS takes input in [EMDB-SFF](http://europepmc.org/article/MED/28682240) and segmentation formats (.am, .mod, .seg, .stl) converted to EMDB-SFF using the [EMDB-SFF Toolkit](https://sfftk.readthedocs.io/en/latest/) integrated in Mol\*VS. We also handle [3D map volumes from EM reconstruction](https://www.ebi.ac.uk/emdb/documentation) and added experimental support for [OME-NGFF](https://www.nature.com/articles/s41592-021-01326-w), focused on light microscopy. These formats were devised by international consortia following ongoing consultations with the scientific community, aiming to support the unification of storage and delivery of bioimaging data and metadata in an accessible, traceable, and scalable fashion.
 
 First, Mol\*VS processes the volumetric and segmentation data into an internal format ([Zarr](https://zarr.readthedocs.io/en/stable/)). These pre-processed data are stored in the internal database in both original and downsampled forms, together with pre-computed statistics, metadata, and internal annotations for each data set. This step happens only when entries in the internal database need to be added/removed/changed.
 
@@ -18,7 +18,7 @@ First, Mol\*VS processes the volumetric and segmentation data into an internal f
 
 ![downsamplings_2](overview/downsamplings_2.png)
 
-Whenever data are requested by the client module, the server module performs a relevant query of the internal database and then packs and delivers the requested data to the client module, which then unpacks the data and feeds it to Mol\* Viewer. 
+Whenever data are requested by the client module, the server module performs a relevant query of the internal database and then packs and delivers the requested data to the client module, which then unpacks the data and feeds them to Mol\* Viewer. 
 
 ![schema](overview/schema.png)
 
