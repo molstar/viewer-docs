@@ -1,5 +1,12 @@
 # Database contents
 
+Legend:
+
+- **Mol\*VS ID**: unique identifier for the entry in the Mol\*VS internal database. Links to [pre-made visualization](http://molstar.org/viewer-docs/volumes_and_segmentations/examples/) if available.
+- **Source data**: original data set. We source all [EMDB and EMPIAR entries with segmentation data](https://www.ebi.ac.uk/empiar/volume-browser/). Additionally, we have included several examples to indicate that Mol\*VS is prepared to handle application-specific segmentation data (.am, .mod, .seg, .stl) in addition to formats promoted by public databases.
+- **Notes**: context about how data were obtained or processed
+- **Known issues**: context about known problems or limitations of specific entries
+
 ## Sourced from EMDB
 
 | Mol\*VS ID   | Source data                                                                                                                                                          | Notes                                                                                                                                                                                                                                                                                                                        | Known issues                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
