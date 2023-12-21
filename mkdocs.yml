@@ -50,6 +50,8 @@ nav:
     - Database Contents: 'volumes_and_segmentations/database-contents.md'
     - Known Issues: 'volumes_and_segmentations/known-issues.md'
     - Hosting Locally: 'volumes_and_segmentations/running-molstarvs-locally.md'
+  - Extensions:
+    - MolViewSpec: 'extensions/mvs.md'
 
 markdown_extensions:
   - pymdownx.highlight
