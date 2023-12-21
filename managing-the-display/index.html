@@ -1,0 +1,1052 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Managing the display - Mol* Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#controls-panel" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mol* Viewer Documentation" class="md-header__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Managing the display
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mol* Viewer Documentation" class="md-nav__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Viewer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs-scenarios/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrations/" class="md-nav__link">
+        Integrations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../making-selections/" class="md-nav__link">
+        Making Selections
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Managing the display
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Managing the display
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#controls-panel" class="md-nav__link">
+    Controls Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-panel" class="md-nav__link">
+    Structure Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurements-panel" class="md-nav__link">
+    Measurements Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-panel" class="md-nav__link">
+    Components Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#density-panel" class="md-nav__link">
+    Density Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-symmetry-panel" class="md-nav__link">
+    Assembly Symmetry Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Import Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Session Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superposition-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Superposition Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maneuvering-in-mol_/" class="md-nav__link">
+        Maneuvering in Mol*
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mol_-cheat-sheet/" class="md-nav__link">
+        Mol* Cheat Sheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigating-by-sequence/" class="md-nav__link">
+        Navigating by Sequence
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-parameters/" class="md-nav__link">
+        Query Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
+      
+      <label class="md-nav__link" for="nav-14">
+        Tips
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="nav-14">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/illustrative-style/" class="md-nav__link">
+        Illustrative Style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/movie-export/" class="md-nav__link">
+        Movie Export
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/url-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/v3/" class="md-nav__link">
+        Version 3
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
+      
+      <label class="md-nav__link" for="nav-15">
+        Volumes and Segmentations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Volumes and Segmentations" data-md-level="1">
+        <label class="md-nav__title" for="nav-15">
+          <span class="md-nav__icon md-icon"></span>
+          Volumes and Segmentations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/how-to/" class="md-nav__link">
+        How To
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/database-contents/" class="md-nav__link">
+        Database Contents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/known-issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/running-molstarvs-locally/" class="md-nav__link">
+        Hosting Locally
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" >
+      
+      <label class="md-nav__link" for="nav-16">
+        Extensions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extensions" data-md-level="1">
+        <label class="md-nav__title" for="nav-16">
+          <span class="md-nav__icon md-icon"></span>
+          Extensions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/mvs/" class="md-nav__link">
+        MolViewSpec
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#controls-panel" class="md-nav__link">
+    Controls Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#structure-panel" class="md-nav__link">
+    Structure Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#measurements-panel" class="md-nav__link">
+    Measurements Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#components-panel" class="md-nav__link">
+    Components Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#density-panel" class="md-nav__link">
+    Density Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assembly-symmetry-panel" class="md-nav__link">
+    Assembly Symmetry Panel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#import-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Import Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Session Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#superposition-panel-only-available-at-molstarorgviewer" class="md-nav__link">
+    Superposition Panel (only available at molstar.org/viewer/)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/viewer-docs/edit/master/docs/managing-the-display.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>Managing the display</h1>
+                
+                <p><strong>Managing the Display</strong></p>
+<h4 id="controls-panel"><strong>Controls Panel</strong></h4>
+<p>This section contains panels that allow for modification and manipulation of the structure display.</p>
+<h4 id="structure-panel"><strong>Structure Panel</strong></h4>
+<p>The Structure Panel allows the user to view the structure in different forms depending on the purpose. The options of display include the deposited coordinates or asymmetric unit (called Model) or various assemblies of the deposited coordinates.</p>
+<p><img src="../img/structurepanel.png" width="200"></p>
+<p>Clicking on the structure name provides a drop-down menu of the structure(s) that are present. When multiple structures are being displayed, structures can be set as active or inactive by selecting a structure using its PDB identifier.</p>
+<p><img src="../img/structuretype.png" width="200"></p>
+<p>NMR structures deposited as ensembles have multiple models in the coordinate file. The Structure Panel shows a bar where the user can scroll through the various models. There are also arrows on the top left corner of the 3D canvas for scrolling through the various models.</p>
+<p><img src="../img/structurenmrimage.png" width="200"></p>
+<p><img src="../img/structurenmrmodelindex.png" width="200"></p>
+<p>Clicking on the presets button next to the structure name provides a drop-down menu of alternate views of the structure.</p>
+<ul>
+<li>Default (Assembly): Creates a structure for assemblies in the file/entry.</li>
+<li>Unit Cell: Creates a structure that fills the crystallographic unit cell. Only available for X-ray entries.</li>
+<li>Super Cell: Creates a structure that fills the crystallographic unit cell and all neighbouring unit cells. Only available for X-ray entries.</li>
+<li>All Models: Creates a structure for each model in the file/entry. Only available for multi-model files/entries.</li>
+</ul>
+<p><img src="../img/structureassembly.png" width="200"></p>
+<p>Under the structure name, you can select the type of view {Model, Assembly, Symmetry Mates, Symmetry (indices), Symmetry (assembly)}.</p>
+<p><img src="../img/structuremodeltype.png" width="200"></p>
+<p>If multiple structures are uploaded at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a> , the Structure Panel will list all the structures. The Structures menu is useful for selecting a structure to have its components listed in the Components Panel.</p>
+<h4 id="measurements-panel"><strong>Measurements Panel</strong></h4>
+<p><img src="../img/measurementspanel.png" width="200"></p>
+<p>The Measurements Panel allows the user to make desired measurements in a structure (<a href="./#labels">labels</a>, <a href="./#distance">distances</a>, <a href="./#angles">angles</a>, <a href="./#dihedrals">dihedrals</a>) to observe relationships between units in the structure (e.g. hydrogen bond distance between atoms).</p>
+<p>To start making measurements, click on the Add button and a drop-down menu will show up. In order to take measurements, the appropriate number of selections need to be made - two selections to measure distance, three selections to measure angles, and four selections to measure dihedrals. Without the appropriate number of selections, the measurement options will not be available for use. See <a href="../making-selections/#selection-mode">Selection Mode</a> for information on making selections.</p>
+<p>The measurement will be made based on which <a href="../making-selections/#picking-level">Picking Level</a> is used for the selections. When the selections are atoms, the measurements will be made from the center of the atoms. If another Picking Level, such as residues or chains, is used, the measurements will be made using points from the center of the space that the selection occupies. This means that if three residues are selected for an angle measurement, the angle will not be taken from the alpha carbon, but from a point from the center of the space the residue takes up.</p>
+<p>Within the Measurements Panel, the selections can be toggled up and down using arrows that show up next to them. This allows the user to make all of their selections first and then specifying which of the selections should be used for the measurements (toggling them up to the top of the selections listing). Additionally, the options button next to the Add button gives the option to change the units in which distance is measured, as well as color options for the text display on the 3D canvas.</p>
+<p><img src="../img/measurementspanelopen.png" width="200"></p>
+<p><img src="../img/measurementssetting.png" width="200"></p>
+<p><strong>Labels</strong>: In order to label a part of the structure, one selection needs to be made. In this example, one atom from the structure <strong>4HHB</strong> was selected. Once this is done, the Labels option is available.</p>
+<p><img src="../img/measurementlabel.png" width="200"></p>
+<p><img src="../img/labelimage.png" width="200"></p>
+<p>Click on it and a label will show up on the 3D canvas, as well as a new Labels menu under the Controls.</p>
+<p><img src="../img/labelsoptions.png" width="200"></p>
+<p>In the Labels menu, you can choose to hide the label on the 3D canvas by clicking on the eye icon, and clicking on it again will show the label. You can delete the label by clicking on the trash icon. For more options, you can click on the rightmost icon (three dots). This will reveal a drop-down menu with Options and Advanced Options, which can be used to adjust the display of the label on the 3D canvas.</p>
+<p><strong>Distance</strong>: In order to measure distance, two selections must be made. In this example, two atoms from the structure <strong>4HHB</strong> were selected. Once this is done, click on the Add button under the Measurements Panel. Under this, the measurement options will be shown, as well as any selections made. The Distance option is now available.</p>
+<p><img src="../img/measurementsdistance.png" width="200"></p>
+<p>Click on it and the distance will be measured and displayed both in the 3D canvas, as well as under a new Distance menu under the controls.</p>
+<p><img src="../img/distanceimage.png" width="200"></p>
+<p><img src="../img/distancepanel.png" width="200"></p>
+<p>The icons in the Distances menu perform the same functions as those in the Labels menu. See <a href="./#labels-menu">Labels</a> for more information.</p>
+<p><strong>Angles</strong>: In order to make angle measurements, three selections need to be made. In this example, three atoms from the structure <strong>4HHB</strong> were selected. The order in which the selections are made will affect the angle that is measured. The second selection will be the vertex of the angle, so make selections accordingly. Once three selections are made, the Angle option is available</p>
+<p><img src="../img/measurementangle.png" width="200"></p>
+<p>Click on it, and an angle measurement will show up on the 3D canvas, as well as a new Angles menu under the Controls.</p>
+<p><img src="../img/angleimage.png" width="200"></p>
+<p><img src="../img/anglepanel.png" width="200"></p>
+<p>The icons in the Angles menu perform the same functions as those in the Labels menu. See <a href="./#labels-menu">Labels</a> for more information.</p>
+<p><strong>Dihedrals</strong>: In order to make a dihedral angle measurement, four selections need to be made. In this example, four atoms from the structure <strong>4HHB</strong> were selected. The order in which the atoms are selected will affect the angle that is measured. The second and third selections represent the line along which the angle between the first and fourth selections is measured. Once the selections are made, the Dihedral option will be available.</p>
+<p><img src="../img/measurementsdihedral.png" width="200"></p>
+<p>Click on the Dihedral option, and a dihedral angle measurement will show up on the 3D canvas, as well as a Dihedrals menu under Controls.</p>
+<p><img src="../img/dihedralimage.png" width="200"></p>
+<p><img src="../img/dihedralpanel.png" width="200"></p>
+<p>The icons in the Dihedrals menu perform the same actions as those in the Labels menu. See <a href="./#labels-menu">Labels</a> for more information.</p>
+<h4 id="components-panel"><strong>Components Panel</strong></h4>
+<p>The Components Panel shows options for the manipulation and display of the contents of the structure(s) being viewed. Components are representations of certain parts of the structure being visualized. For more information, see <a href="../maneuvering-in-mol_/#components-logic">Components Logic</a>.</p>
+<p>By default, the preset that shows up when a structure is Polymer &amp; Ligand, in which the polymers, ligands and water components are shown. Additional components can be added by selecting groups of atoms, residues, or chains.</p>
+<p>The components shown depend on the structure and what preset is chosen as well as what components are created. The following are the presets available and a description of their functions.</p>
+<ul>
+<li>Empty: Removes all representation to give you a blank slate to work with.</li>
+<li>Automatic: Chooses a Basic preset based on the size (residue count, number of symmetric chains) of a structure. Smaller structures are shown with more detail than larger ones, ranging from atomistic display to coarse surfaces.</li>
+<li>Basic:</li>
+<li>Atomic Detail: Shows everything in atomic detail with Ball &amp; Stick representation.</li>
+<li>Polymer Cartoon: Shows polymers in Cartoon representation.</li>
+<li>Polymer &amp; Ligand: Shows polymers as Cartoon, ligands as Ball &amp; Stick, carbohydrates as 3D-SNFG (Symbol Nomenclature For Glycans) and water molecules semi-transparent.</li>
+<li>Protein &amp; Nucleic: Shows proteins as Cartoon and RNA/DNA as Gaussian Surface.</li>
+<li>Coarse Surface: Shows polymers as coarse Gaussian Surface.</li>
+<li>Annotation:</li>
+<li>Assembly Symmetry: Same as ‘Automatic’ preset but colored by Assembly Symmetry Cluster membership and showing Assembly Symmetry axes and polyhedron cage.</li>
+<li>Validation Report (Geometry Quality): Same as ‘Automatic’ preset but colored by Geometry Quality and displaying geometry clashes as pink disks.</li>
+<li>Validation Report (Density Fit): Same as ‘Automatic’ preset but colored by Density Fit. Only shown/available for X-ray entries.</li>
+<li>Validation Report (Random Coil Index): Same as Automatic preset but colored by Random Coil Index. Only shown/available for NMR entries.</li>
+</ul>
+<p>A component can be added by making a <a href="../making-selections/#selection-mode">selection</a> and either using the Components icon in the Selection Mode toolbar or using the Add button in the Components Panel under Controls.</p>
+<p>Components that can be viewed under the panel can include the polymer, any ligands that are present in the structure, and any added components. Additionally, if a selection is made while in default mode, then the focused region will include two targets as well: [Focus] Target, [Focus] Surroundings (5 Å).</p>
+<p><img src="../img/selectionmenu.png" width="200"></p>
+<p><img src="../img/componentspanel.png" width="200"></p>
+<p><img src="../img/componentspolymeroptions.png" width="200"></p>
+<p>The icons next to each component perform similar functions as seen in the Measurements Panel.</p>
+<p>When the options icon for a component is selected, various options are available.</p>
+<ul>
+<li>Add Representation: Can choose the representation of that component (cartoon, ball-and-stick, Gaussian, etc.)</li>
+<li>Set Coloring: Choose the coloring of the component</li>
+<li>Modify by Selection: Gives selection options given in the Selection Mode toolbar</li>
+</ul>
+<p>A visual representation of the unit cell is also available, and can be enabled by clicking the eye icon next to the Unit Cell option.</p>
+<p>The following are the representation options available:</p>
+<ul>
+<li>Ball &amp; stick </li>
+<li>Cartoon</li>
+<li>Gaussian surface</li>
+<li>Label </li>
+<li>Molecular surface</li>
+<li>Orientation </li>
+<li>Point</li>
+<li>Putty</li>
+<li>Validation clashes </li>
+</ul>
+<p>To modify a selection within a component, first make a selection, and choose Modify by Selection for the component of choice within the Components Panel, and choose one of these options:</p>
+<ul>
+<li>Include - This will include the selection in the component</li>
+<li>Subtract - This will remove the selection from the component</li>
+<li>Intersect - This will change the component to be the intersection between the original component and the selection</li>
+</ul>
+<p>Additionally, the Options button next to the Add button under the components panel allows for adjustments for the representation of non-covalent interactions. Display of hydrogen atoms in the visual can be toggled on and off. Additionally, clicking Non-covalent interactions yields a drop down menu with various types of non-covalent interactions. These can be toggled on and off for display in the non-covalent interactions representation. Additionally, clicking on the options button (three dots) next to any of the interactions yields a drop down menu for various parameters for that interaction. This menu can be used to tweak the parameters for calculation for any of the interactions.</p>
+<p><img src="../img/componentsoptions.png" width="200"></p>
+<h4 id="density-panel"><strong>Density Panel</strong></h4>
+<p>The Density Panel gives options to display the electron density maps used to determine the structure in the 3D canvas. This option is only available for structures solved by X-ray crystallography or cryogenic electron microscopy. When enabled, the display of each of the maps can be adjusted using the sliding bars available.</p>
+<p>Visualization of the maps can be adjusted by clicking the + icon next to each map, which will give a drop-down menu of options. They can be shown by a wireframe, which can be turned on by clicking next to the Wireframe option. The color of each map can be changed in this map, as well as the opacity of the map.</p>
+<p>View of the maps can be adjusted by clicking on the drop-down menu next to the View button, which gives options to view the maps in different settings. In this menu, the density maps can be turned off, as well as adjusted to be shown around a focus, for the whole structure, or for a bounded box. For the bounded box, the user can select the coordinates of the bottom left and top right corners of the box within which the density maps will be displayed.</p>
+<p>In order to view any changes made within this panel, click Update at the bottom of the panel.</p>
+<p><img src="../img/densitypanel.png" width="200"></p>
+<h4 id="assembly-symmetry-panel"><strong>Assembly Symmetry Panel</strong></h4>
+<p>The Assembly Symmetry Panel demonstrates any symmetries within the molecule when displayed in Assembly mode. Once enabled, any symmetries that are in the molecule will be available as a drop-down menu to display and visualize on the 3D canvas. Additionally, the <a href="../common-actions/#color">coloring</a> of the symmetry can be adjusted.</p>
+<p><img src="../img/assemblysymmetrypanel.png" width="200"></p>
+<h4 id="import-panel-only-available-at-molstarorgviewer"><strong>Import Panel (only available at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a>)</strong></h4>
+<p>The Import Panel enables users to upload multiple molecular structures into Mol* to compare them or perform superpositions. The Import Panel can only be accessed at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a> and is located at the top of the Controls Panel.</p>
+<p><strong>Open Files:</strong> The Open Files menu is used to upload structures from computer files. The menu also provides structure display options. To automatically view the structure in the 3D canvas, set Visuals to “On.” After a file is selected and the desired options are chosen, click “Apply” to upload the structure.</p>
+<p><img src="../img/import1.png" width="200"></p>
+<p><strong>Download Structure:</strong> The Download Structure menu is used to access or download structures directly from various archives such as the PDB, PDB-Dev, SWISS-MODEL, or PubChem by inputting IDs/accession codes. The identifiers of multiple structures can be listed at once by separating them with commas. After the identifiers have been inputted, click “Apply” to upload the structures.</p>
+<p><img src="../img/import2.png" width="200"></p>
+<h4 id="session-panel-only-available-at-molstarorgviewer"><strong>Session Panel (only available at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a>)</strong></h4>
+<p>The Session Panel enables users to save sessions and views. Sessions are downloaded as computer files which can be opened in Mol* at any time. In addition, users can share session files with others to collaborate. Within a Mol* session, users are able to create “views” which contain all the information in the 3D canvas at the time the views were saved. Multiple views can be saved in a single session. The Session Panel can only be accessed at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a> and is located in the Controls Panel.</p>
+<p><strong>Saving Views:</strong> The Views menu is used to save views in Mol*. Users can name views and write a description for each one. After clicking “+ Add,” the view will be saved in the Views menu for the entirety of the session.</p>
+<p><img src="../img/session1.png" width="200"></p>
+<p><strong>Deleting/Replacing Views:</strong> The Views menu contains a list of all saved views. Next to each view is a trash can icon. Clicking that icon allows the view to be deleted from the Mol* session. To replace a view, click on the horizontal parallel arrows icon. This will replace the view with the current view in the 3D canvas. Deleting and replacing views are actions that cannot be undone.</p>
+<p><img src="../img/session2.png" width="200"></p>
+<p><strong>Opening Saved Views:</strong> There are two ways to open saved views in Mol*.</p>
+<ul>
+<li>All saved views will be listed in the Views menu. Click on a view to open it.</li>
+<li>If multiple views are saved, they can be accessed using a drop-down menu at the top of the 3D canvas. Clicking on a view will open it. The order in which the views are listed depends on the time they were saved. To reorder the views, use the up and down arrows next to each view in the Views menu. In default mode, use the arrows pointing left and right to switch between saved views.</li>
+</ul>
+<p><img src="../img/session3.png" width="200"></p>
+<p><strong>Cycle Through Saved Views:</strong> In default mode, click the “play” button in the toolbar at the top of the 3D canvas to cycle between all saved views. Click the “stop” button to stop cycling between them.</p>
+<p><strong>Download/Open Menu:</strong> The Download/Open menu allows users to save sessions and states. It also allows them to be reopened at any time.</p>
+<h4 id="superposition-panel-only-available-at-molstarorgviewer"><strong>Superposition Panel (only available at <a href="https://molstar.org/viewer/">molstar.org/viewer/</a>)</strong></h4>
+<p>The Superposition Panel rotates and translates molecular structures to make them match other structures. Mol* performs superpositions by matching selected chains or atoms. The root-mean-square deviation (RMSD) of the superposed structures will be listed in the Log Panel at the bottom of the application window. To access the Superposition Panel, two or more structures must be <a href="./#import-panel">uploaded</a> at <a href="https://molstar.org/viewer/">molstar.org/viewer</a>. The Superposition Panel will appear in the Controls Panel next to the 3D canvas.</p>
+<p><img src="../img/superpositionpanel.png" width="200"></p>
+<p><strong>Superposing by Chains:</strong> In order to superpose structures by chains, two or more selections from separate structures are required. Regions of a chain can also be selected for superposition. For each PDB entry, <a href="../making-selections/#selection-mode">selections</a> must be limited to single polymer <a href="../making-selections/#picking-level">chains</a> per structure. If using a region of a chain, only one region per chain can be used for each structure. After making two or more selections, click “Superpose” to superpose the structures in the 3D canvas. While the superposition is per chain, the resulting 3D transformation is always applied to the whole structure. When superposing more than two structures, note that the alignment is done to the first structure. The RMSD will be listed in the Log Panel.</p>
+<p><img src="../img/superpositionchains.png" width="200"></p>
+<p><img src="../img/superpositionchainsselection.png" width="200"></p>
+<p><strong>Superposing by Atoms:</strong> In order to superpose structures by atoms, one or more atoms from separate structures must be selected. <a href="../making-selections/#selection-mode">Select</a> one or more <a href="../making-selections/#picking-level">atoms</a> and click “Superpose” to superpose the structures in the 3D canvas. The superposition is done on all given pairs of atoms in the order they appear in the panel. To reorder the atoms, use the up and down arrows in the panel. The RMSD will be listed in the Log Panel.</p>
+<p><img src="../img/superpositionatoms.png" width="200"></p>
+<p><img src="../img/superpositionatomsselection.png" width="200"></p>
+<p>Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../making-selections/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Making Selections
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../maneuvering-in-mol_/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Maneuvering in Mol*
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>

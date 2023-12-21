@@ -1,0 +1,1156 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>Query Parameters - Mol* Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#query-parameters" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mol* Viewer Documentation" class="md-header__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Query Parameters
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mol* Viewer Documentation" class="md-nav__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Viewer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faqs-scenarios/" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrations/" class="md-nav__link">
+        Integrations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../making-selections/" class="md-nav__link">
+        Making Selections
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-the-display/" class="md-nav__link">
+        Managing the display
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maneuvering-in-mol_/" class="md-nav__link">
+        Maneuvering in Mol*
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mol_-cheat-sheet/" class="md-nav__link">
+        Mol* Cheat Sheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigating-by-sequence/" class="md-nav__link">
+        Navigating by Sequence
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Query Parameters
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Query Parameters
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hide-controls" class="md-nav__link">
+    hide-controls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapse-left-panel" class="md-nav__link">
+    collapse-left-panel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-provider" class="md-nav__link">
+    pdb-provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emdb-provider" class="md-nav__link">
+    emdb-provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapshot-url" class="md-nav__link">
+    snapshot-url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapshot-url-type" class="md-nav__link">
+    snapshot-url-type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url" class="md-nav__link">
+    structure-url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url-format" class="md-nav__link">
+    structure-url-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url-is-binary" class="md-nav__link">
+    structure-url-is-binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb" class="md-nav__link">
+    pdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-dev" class="md-nav__link">
+    pdb-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emdb" class="md-nav__link">
+    emdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afdb" class="md-nav__link">
+    afdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-archive" class="md-nav__link">
+    model-archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-mode" class="md-nav__link">
+    debug-mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pixel-scale" class="md-nav__link">
+    pixel-scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-wboit" class="md-nav__link">
+    disable-wboit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
+      
+      <label class="md-nav__link" for="nav-14">
+        Tips
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="nav-14">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/illustrative-style/" class="md-nav__link">
+        Illustrative Style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/movie-export/" class="md-nav__link">
+        Movie Export
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/url-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/v3/" class="md-nav__link">
+        Version 3
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
+      
+      <label class="md-nav__link" for="nav-15">
+        Volumes and Segmentations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Volumes and Segmentations" data-md-level="1">
+        <label class="md-nav__title" for="nav-15">
+          <span class="md-nav__icon md-icon"></span>
+          Volumes and Segmentations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/how-to/" class="md-nav__link">
+        How To
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/database-contents/" class="md-nav__link">
+        Database Contents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/known-issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/running-molstarvs-locally/" class="md-nav__link">
+        Hosting Locally
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" >
+      
+      <label class="md-nav__link" for="nav-16">
+        Extensions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extensions" data-md-level="1">
+        <label class="md-nav__title" for="nav-16">
+          <span class="md-nav__icon md-icon"></span>
+          Extensions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/mvs/" class="md-nav__link">
+        MolViewSpec
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#hide-controls" class="md-nav__link">
+    hide-controls
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#collapse-left-panel" class="md-nav__link">
+    collapse-left-panel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-provider" class="md-nav__link">
+    pdb-provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emdb-provider" class="md-nav__link">
+    emdb-provider
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapshot-url" class="md-nav__link">
+    snapshot-url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#snapshot-url-type" class="md-nav__link">
+    snapshot-url-type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url" class="md-nav__link">
+    structure-url
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url-format" class="md-nav__link">
+    structure-url-format
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure-url-is-binary" class="md-nav__link">
+    structure-url-is-binary
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb" class="md-nav__link">
+    pdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pdb-dev" class="md-nav__link">
+    pdb-dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#emdb" class="md-nav__link">
+    emdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afdb" class="md-nav__link">
+    afdb
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-archive" class="md-nav__link">
+    model-archive
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug-mode" class="md-nav__link">
+    debug-mode
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pixel-scale" class="md-nav__link">
+    pixel-scale
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disable-wboit" class="md-nav__link">
+    disable-wboit
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
+    Examples
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/viewer-docs/edit/master/docs/query-parameters.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="query-parameters">Query Parameters</h1>
+<p>The Mol* Viewer supports a number of URL <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_URL#parameters">parameters</a> to load structures and change viewer options.</p>
+<h2 id="parameters">Parameters</h2>
+<h3 id="hide-controls"><code>hide-controls</code></h3>
+<p>This will hide the UI panels on all sides. If <code>1</code> the controls are hidden. For all other values the controls are shown. By default the controls are shown. Clicking on the wrench icon in the top right of the canvas will toggle the visibility of the controls.</p>
+<div class="highlight"><pre><span></span><code>hide-controls=1
+</code></pre></div>
+<h3 id="collapse-left-panel"><code>collapse-left-panel</code></h3>
+<p>This will collapse the left UI panel to a vertical icon bar. If <code>1</code> the left panel is collapsed. For all other values the left panel is fully shown. By default the left panel is fully are shown. Clicking on an icon in the vertical icon bar will toggle between the collapsed and fully shown state.</p>
+<div class="highlight"><pre><span></span><code>collapse-left-panel=1
+</code></pre></div>
+<h3 id="pdb-provider"><code>pdb-provider</code></h3>
+<p>Where to load PDB entries from. Allowed values are <code>pdbe</code>, <code>pdbj</code> and <code>rcsb</code>. Defaults to <code>pdbe</code>. From Europe, <code>pdbe</code> generally offers faster PDB downloads. From Asia-Pacific, <code>pdbj</code> is usually faster. From the Americas, <code>rcsb</code> is usually faster.</p>
+<div class="highlight"><pre><span></span><code>pdb-provider=pdbe
+</code></pre></div>
+<h3 id="emdb-provider"><code>emdb-provider</code></h3>
+<p>Where to load EMDB entries from. Allowed values are <code>pdbe</code> and <code>rcsb</code>. Defaults to <code>pdbe</code>. From Europe, <code>pdbe</code> generally offers faster EMDB downloads. From the Americas, <code>rcsb</code> is faster.</p>
+<div class="highlight"><pre><span></span><code>emdb-provider=pdbe
+</code></pre></div>
+<h3 id="snapshot-url"><code>snapshot-url</code></h3>
+<p>URL pointing to a molstar snapshot. Use <code>snapshot-url-type</code> to define the type.</p>
+<div class="highlight"><pre><span></span><code>snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fbtub.molx
+</code></pre></div>
+<h3 id="snapshot-url-type"><code>snapshot-url-type</code></h3>
+<p>Allowed values are <code>molj</code> and <code>molx</code>.  Defaults to <code>molj</code>.</p>
+<div class="highlight"><pre><span></span><code>snapshot-url-type=molj
+</code></pre></div>
+<h3 id="structure-url"><code>structure-url</code></h3>
+<p>URL pointing to a structure file.</p>
+<div class="highlight"><pre><span></span><code>structure-url=https://files.rcsb.org/download/6Z1W.cif
+</code></pre></div>
+<h3 id="structure-url-format"><code>structure-url-format</code></h3>
+<p>Allowed values <code>mmcif</code>, <code>pdb</code>, <code>gro</code>, <code>sdf</code>, <code>mol2</code>, ...</p>
+<div class="highlight"><pre><span></span><code>structure-url-format=mmcif
+</code></pre></div>
+<h3 id="structure-url-is-binary"><code>structure-url-is-binary</code></h3>
+<p>If <code>1</code> binary, otherwise not binary.</p>
+<div class="highlight"><pre><span></span><code>structure-url-is-binary=1
+</code></pre></div>
+<h3 id="pdb"><code>pdb</code></h3>
+<p>Load one or more (comma separated) <a href="https://www.wwpdb.org/">PDB</a> entries.</p>
+<div class="highlight"><pre><span></span><code>pdb=3pqr
+</code></pre></div>
+<h3 id="pdb-dev"><code>pdb-dev</code></h3>
+<p>Load one or more (comma separated) <a href="https://pdb-dev.wwpdb.org/">PDB-Dev</a> entries.</p>
+<div class="highlight"><pre><span></span><code>pdb-dev=PDBDEV_00000030
+</code></pre></div>
+<h3 id="emdb"><code>emdb</code></h3>
+<p>Load one or more (comma separated) <a href="https://www.ebi.ac.uk/emdb/">EMDB</a> entries.</p>
+<div class="highlight"><pre><span></span><code>emdb=EMD-23149
+</code></pre></div>
+<h3 id="afdb"><code>afdb</code></h3>
+<p>Load one or more (comma separated) <a href="https://alphafold.ebi.ac.uk/">AlphaFold DB</a> entries.</p>
+<div class="highlight"><pre><span></span><code>afdb=Q8W3K0
+</code></pre></div>
+<h3 id="model-archive"><code>model-archive</code></h3>
+<p>Load one or more (comma separated) <a href="https://www.modelarchive.org/">Model Archive</a> entries.</p>
+<div class="highlight"><pre><span></span><code>model-archive=ma-bak-cepc-0003
+</code></pre></div>
+<h3 id="debug-mode"><code>debug-mode</code></h3>
+<p>If <code>1</code> enabled, otherwise not. This will print debug info to the browser console and performs (expensive) runtime checks.</p>
+<div class="highlight"><pre><span></span><code>debug-mode=1
+</code></pre></div>
+<h3 id="pixel-scale"><code>pixel-scale</code></h3>
+<p>How many rendered pixels correspond to displayed pixels. Defaults to 1. Set to &lt; 1 for a more blurry, pixelated but faster rendered image. Set to &gt; 1 for a sharper, less pixelated but slower rendered image.</p>
+<div class="highlight"><pre><span></span><code>pixel-scale=1
+</code></pre></div>
+<h3 id="disable-wboit"><code>disable-wboit</code></h3>
+<p>If <code>1</code>, WBOIT is disabled, otherwise it is enabled. WBOIT stands for 'weighted blended order-independent transparency' [<a href="https://jcgt.org/published/0002/02/09/">McGuire &amp; Bavoil, JCGT 2013</a>]. It allows more acurate rendering of overlapping transparent objects at the expense of some speed.</p>
+<div class="highlight"><pre><span></span><code>disable-wboit=1
+</code></pre></div>
+<h2 id="examples">Examples</h2>
+<p>Load a molx snapshot from an <a href="https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fbtub.molx&amp;snapshot-url-type=molx">URL</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?snapshot-url=https%3A%2F%2Fmolstar.org%2Fdemos%2Fstates%2Fbtub.molx&amp;snapshot-url-type=molx
+</code></pre></div>
+<p>Load a mmCIF file from an <a href="https://molstar.org/viewer/?structure-url=https://files.rcsb.org/download/6Z1W.cif&amp;structure-url-format=mmcif">URL</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?structure-url=https://files.rcsb.org/download/6Z1W.cif&amp;structure-url-format=mmcif
+</code></pre></div>
+<p>Load PDB entry <a href="https://molstar.org/viewer/?pdb=3pqr">3PQR</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?pdb=3pqr
+</code></pre></div>
+<p>Load PDB-Dev entry <a href="https://molstar.org/viewer/?pdb-dev=PDBDEV_00000030">PDBDEV_00000030</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?pdb-dev=PDBDEV_00000030
+</code></pre></div>
+<p>Load EMDB entry <a href="https://molstar.org/viewer/?emdb=EMD-23149">EMD-23149</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?emdb=EMD-23149
+</code></pre></div>
+<p>Load AlphaFold DB entry for UniProt AC <a href="https://molstar.org/viewer/?afdb=Q8W3K0">Q8W3K0</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?afdb=Q8W3K0
+</code></pre></div>
+<p>Load Model Archive entry <a href="https://molstar.org/viewer/?model-archive=ma-bak-cepc-0003">ma-bak-cepc-0003</a></p>
+<div class="highlight"><pre><span></span><code>https://molstar.org/viewer/?model-archive=ma-bak-cepc-0003
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../navigating-by-sequence/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Navigating by Sequence
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../tips/illustrative-style/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Illustrative Style
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>

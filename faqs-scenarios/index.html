@@ -1,0 +1,1323 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-7.0.0b2">
+    
+    
+      
+        <title>FAQ - Mol* Viewer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3149646c.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#how-do-i-navigate-the-3d-canvas-using-a-mouse-touchpad-or-touchscreen" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Mol* Viewer Documentation" class="md-header__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mol* Viewer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              FAQ
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Mol* Viewer Documentation" class="md-nav__button md-logo" aria-label="Mol* Viewer Documentation">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    Mol* Viewer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/molstar/viewer-docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Images_Movies/" class="md-nav__link">
+        Images/Movies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../common-actions/" class="md-nav__link">
+        Common Actions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        FAQ
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-navigate-the-3d-canvas-using-a-mouse-touchpad-or-touchscreen" class="md-nav__link">
+    How do I navigate the 3D canvas using a mouse, touchpad, or touchscreen?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-make-selections" class="md-nav__link">
+    How do I make selections?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-four-buttons-with-overlapping-circles-in-the-selection-mode-toolbar" class="md-nav__link">
+    What are the four buttons with overlapping circles in the Selection Mode toolbar?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-select-by-secondary-structures" class="md-nav__link">
+    How do I select by secondary structures?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-invert-my-selection" class="md-nav__link">
+    How do I invert my selection?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-select-a-specific-type-of-amino-acid-throughout-the-structure" class="md-nav__link">
+    How do I select a specific type of amino acid throughout the structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-replace-which-sequence-is-shown-in-the-sequence-panel" class="md-nav__link">
+    How can I replace which sequence is shown in the Sequence Panel?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-switch-between-different-models-and-biological-assemblies-for-display-in-the-3d-canvas" class="md-nav__link">
+    How do I switch between different models and biological assemblies for display in the 3D canvas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-structure-by-the-rainbowspectrum-color-scheme" class="md-nav__link">
+    How do I color a structure by the rainbow/spectrum color scheme?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-based-on-chain" class="md-nav__link">
+    How do I color based on chain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-structure-based-on-hydrophobicity" class="md-nav__link">
+    How do I color a structure based on hydrophobicity?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-whole-structure-based-on-secondary-structural-elements-alpha-helices-and-beta-strandssheets" class="md-nav__link">
+    How do I color a whole structure based on secondary structural elements (alpha helices and beta strands/sheets)?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-domain" class="md-nav__link">
+    How do I color a domain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-transparency-of-representations-and-surfaces" class="md-nav__link">
+    How do I change the transparency of representations and surfaces?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-hide-certain-parts-of-a-structure" class="md-nav__link">
+    How do I hide certain parts of a structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-representation-of-my-structure" class="md-nav__link">
+    How do I change the representation of my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-show-the-surface-of-my-structure" class="md-nav__link">
+    How do I show the surface of my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-focus-on-part-of-a-structure" class="md-nav__link">
+    How do I focus on part of a structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-measure-distances" class="md-nav__link">
+    How do I measure distances?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-measure-angles" class="md-nav__link">
+    How do I measure angles?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-label-my-structure" class="md-nav__link">
+    How do I label my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-comparesuperpose-multiple-structures" class="md-nav__link">
+    How do I compare/superpose multiple structures?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-would-i-use-superposition-to-compare-structures-by-chains-and-by-atoms" class="md-nav__link">
+    When would I use superposition to compare structures “by chains” and “by atoms?”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-improve-the-rmsd-value-for-my-superposition" class="md-nav__link">
+    How can I improve the RMSD value for my superposition?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-represent-my-ligand-when-it-is-a-peptide-like-molecule" class="md-nav__link">
+    How do I represent my ligand when it is a peptide-like molecule?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-color-or-representation-of-one-chain-in-the-structure" class="md-nav__link">
+    How do I change the color or representation of one chain in the structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-show-hydrogen-bonds-non-covalent-interactions" class="md-nav__link">
+    How do I show hydrogen bonds (non-covalent interactions)?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-tweak-the-hydrogen-bond-distance-threshold" class="md-nav__link">
+    How do I tweak the hydrogen bond distance threshold?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-display-the-interactions-of-a-ligand-with-amino-acids-and-ligands-bound-nearby" class="md-nav__link">
+    How to display the interactions of a ligand with amino acids and ligands bound nearby?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-i-have-multiple-structures-uploaded-how-can-i-toggle-between-the-display-of-the-structures" class="md-nav__link">
+    If I have multiple structures uploaded, how can I toggle between the display of the structures?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        Glossary
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../integrations/" class="md-nav__link">
+        Integrations
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../making-selections/" class="md-nav__link">
+        Making Selections
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../managing-the-display/" class="md-nav__link">
+        Managing the display
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../maneuvering-in-mol_/" class="md-nav__link">
+        Maneuvering in Mol*
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mol_-cheat-sheet/" class="md-nav__link">
+        Mol* Cheat Sheet
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../navigating-by-sequence/" class="md-nav__link">
+        Navigating by Sequence
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../query-parameters/" class="md-nav__link">
+        Query Parameters
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14" >
+      
+      <label class="md-nav__link" for="nav-14">
+        Tips
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Tips" data-md-level="1">
+        <label class="md-nav__title" for="nav-14">
+          <span class="md-nav__icon md-icon"></span>
+          Tips
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/illustrative-style/" class="md-nav__link">
+        Illustrative Style
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/measurements/" class="md-nav__link">
+        Measurements
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/movie-export/" class="md-nav__link">
+        Movie Export
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/quick-styles/" class="md-nav__link">
+        Quick Styles
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/url-parameters/" class="md-nav__link">
+        URL Parameters
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tips/v3/" class="md-nav__link">
+        Version 3
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-15" type="checkbox" id="nav-15" >
+      
+      <label class="md-nav__link" for="nav-15">
+        Volumes and Segmentations
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Volumes and Segmentations" data-md-level="1">
+        <label class="md-nav__title" for="nav-15">
+          <span class="md-nav__icon md-icon"></span>
+          Volumes and Segmentations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/how-to/" class="md-nav__link">
+        How To
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/examples/" class="md-nav__link">
+        Examples
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/database-contents/" class="md-nav__link">
+        Database Contents
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/known-issues/" class="md-nav__link">
+        Known Issues
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../volumes_and_segmentations/running-molstarvs-locally/" class="md-nav__link">
+        Hosting Locally
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-16" type="checkbox" id="nav-16" >
+      
+      <label class="md-nav__link" for="nav-16">
+        Extensions
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Extensions" data-md-level="1">
+        <label class="md-nav__title" for="nav-16">
+          <span class="md-nav__icon md-icon"></span>
+          Extensions
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extensions/mvs/" class="md-nav__link">
+        MolViewSpec
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-navigate-the-3d-canvas-using-a-mouse-touchpad-or-touchscreen" class="md-nav__link">
+    How do I navigate the 3D canvas using a mouse, touchpad, or touchscreen?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-make-selections" class="md-nav__link">
+    How do I make selections?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-are-the-four-buttons-with-overlapping-circles-in-the-selection-mode-toolbar" class="md-nav__link">
+    What are the four buttons with overlapping circles in the Selection Mode toolbar?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-select-by-secondary-structures" class="md-nav__link">
+    How do I select by secondary structures?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-invert-my-selection" class="md-nav__link">
+    How do I invert my selection?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-select-a-specific-type-of-amino-acid-throughout-the-structure" class="md-nav__link">
+    How do I select a specific type of amino acid throughout the structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-replace-which-sequence-is-shown-in-the-sequence-panel" class="md-nav__link">
+    How can I replace which sequence is shown in the Sequence Panel?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-switch-between-different-models-and-biological-assemblies-for-display-in-the-3d-canvas" class="md-nav__link">
+    How do I switch between different models and biological assemblies for display in the 3D canvas?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-structure-by-the-rainbowspectrum-color-scheme" class="md-nav__link">
+    How do I color a structure by the rainbow/spectrum color scheme?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-based-on-chain" class="md-nav__link">
+    How do I color based on chain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-structure-based-on-hydrophobicity" class="md-nav__link">
+    How do I color a structure based on hydrophobicity?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-whole-structure-based-on-secondary-structural-elements-alpha-helices-and-beta-strandssheets" class="md-nav__link">
+    How do I color a whole structure based on secondary structural elements (alpha helices and beta strands/sheets)?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-color-a-domain" class="md-nav__link">
+    How do I color a domain?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-transparency-of-representations-and-surfaces" class="md-nav__link">
+    How do I change the transparency of representations and surfaces?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-hide-certain-parts-of-a-structure" class="md-nav__link">
+    How do I hide certain parts of a structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-representation-of-my-structure" class="md-nav__link">
+    How do I change the representation of my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-show-the-surface-of-my-structure" class="md-nav__link">
+    How do I show the surface of my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-focus-on-part-of-a-structure" class="md-nav__link">
+    How do I focus on part of a structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-measure-distances" class="md-nav__link">
+    How do I measure distances?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-measure-angles" class="md-nav__link">
+    How do I measure angles?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-label-my-structure" class="md-nav__link">
+    How do I label my structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-comparesuperpose-multiple-structures" class="md-nav__link">
+    How do I compare/superpose multiple structures?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-would-i-use-superposition-to-compare-structures-by-chains-and-by-atoms" class="md-nav__link">
+    When would I use superposition to compare structures “by chains” and “by atoms?”
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-improve-the-rmsd-value-for-my-superposition" class="md-nav__link">
+    How can I improve the RMSD value for my superposition?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-represent-my-ligand-when-it-is-a-peptide-like-molecule" class="md-nav__link">
+    How do I represent my ligand when it is a peptide-like molecule?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-change-the-color-or-representation-of-one-chain-in-the-structure" class="md-nav__link">
+    How do I change the color or representation of one chain in the structure?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-show-hydrogen-bonds-non-covalent-interactions" class="md-nav__link">
+    How do I show hydrogen bonds (non-covalent interactions)?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-do-i-tweak-the-hydrogen-bond-distance-threshold" class="md-nav__link">
+    How do I tweak the hydrogen bond distance threshold?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-display-the-interactions-of-a-ligand-with-amino-acids-and-ligands-bound-nearby" class="md-nav__link">
+    How to display the interactions of a ligand with amino acids and ligands bound nearby?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-i-have-multiple-structures-uploaded-how-can-i-toggle-between-the-display-of-the-structures" class="md-nav__link">
+    If I have multiple structures uploaded, how can I toggle between the display of the structures?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/molstar/viewer-docs/edit/master/docs/faqs-scenarios.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                  <h1>FAQ</h1>
+                
+                <p><strong>FAQs/Scenarios</strong></p>
+<h4 id="how-do-i-navigate-the-3d-canvas-using-a-mouse-touchpad-or-touchscreen"><strong>How do I navigate the 3D canvas using a mouse, touchpad, or touchscreen?</strong></h4>
+<p>To rotate the structure, click the left mouse button and move. Alternatively, use the Shift button + left mouse button and drag.</p>
+<p>To translate the structure, click the right mouse button and move. Alternatively, use the Control button + the left mouse button and move. On a touchscreen device, use a two-finger drag.</p>
+<p>To zoom in or out, use the mouse wheel. On a touchpad, use a two-finger drag. On a touchscreen device, pinch two fingers.</p>
+<p>To zoom in and center on a part of a structure, use the right mouse button to click onto the part of the structure you wish to focus on.</p>
+<p>To change the clipping planes, use the Shift button + the mouse wheel. On a touchpad, use the Shift button + a two-finger drag.</p>
+<h4 id="how-do-i-make-selections"><strong>How do I make selections?</strong></h4>
+<p>There are several ways to make selections in Mol*. You first need to open <a href="../making-selections/#selection-mode">Selection Mode</a> and change the <a href="../making-selections/#picking-level">Picking Level</a>, if needed. To make selections, you can either click on parts of the structure in the 3D canvas or <a href="../navigating-by-sequence/#sequence-panel">Sequence Panel</a>, or use the Set Operations Menus in the Selection Mode toolbar.</p>
+<h4 id="what-are-the-four-buttons-with-overlapping-circles-in-the-selection-mode-toolbar"><strong>What are the four buttons with overlapping circles in the Selection Mode toolbar?</strong></h4>
+<p>The four buttons are used to modify a current selection with a new selection. The Add/Union button takes the current selection and adds a new selection to it. The Subtract/Remove button takes the current selection and removes the parts of it that are in a new selection. The Intersect button takes the current selection and selects the parts of it that are in the new selection. The Set button takes the current selection and replaces it entirely with a new selection.</p>
+<p>For example, suppose all leucine residues are selected in a structure. A user then uses each button in the toolbar and clicks the “helices” option. For the Add/Union button, Mol* will select all leucine residues and all helices. For the Subtract/Remove button, Mol* will select all leucine residues not in helices. For the Intersect button, Mol* will select all leucine residues in helices. For the Set button and selects helices, Mol* will select all helices.</p>
+<h4 id="how-do-i-select-by-secondary-structures"><strong>How do I select by secondary structures?</strong></h4>
+<p>If you want to select only secondary structures (alpha helices and beta strands/sheets), there are options to do this in the Selection Mode toolbar. Go to Set Selection, then click Structure Property. At this point you can choose either Helix or Beta Strand/Sheet to select either.</p>
+<h4 id="how-do-i-invert-my-selection"><strong>How do I invert my selection?</strong></h4>
+<p>After making a selection of the region you want to exclude from the selection, click the Set Selection button in the Selection Mode toolbar. Under this menu, choose Manipulate Selection, then choose Inverse/Complement of Selection.</p>
+<h4 id="how-do-i-select-a-specific-type-of-amino-acid-throughout-the-structure"><strong>How do I select a specific type of amino acid throughout the structure?</strong></h4>
+<p>Within the Selection Mode toolbar, go to Set Selection, and under Amino Acid, choose the amino acid you would like to select. For example, to select all histidine residues, click on “Set Selection” then scroll down to Amino Acid and click on “Histidine (HIS).”</p>
+<h4 id="how-can-i-replace-which-sequence-is-shown-in-the-sequence-panel"><strong>How can I replace which sequence is shown in the Sequence Panel?</strong></h4>
+<p>There are three drop-down menus in the <a href="../navigating-by-sequence/#sequence-panel">Sequence Panel</a>. The leftmost menu allows you to decide which PDB structure the new sequence should be from. The centermost menu allows you to decide which entity the new sequence should be from. The rightmost menu allows you to decide which part of the entity the new sequence should be from (if the entity contains duplicate copies).</p>
+<h4 id="how-do-i-switch-between-different-models-and-biological-assemblies-for-display-in-the-3d-canvas"><strong>How do I switch between different models and biological assemblies for display in the 3D canvas?</strong></h4>
+<p>Go to the Controls Panel and to the <a href="../managing-the-display/#structure-panel">Structure Panel</a>. Clicking the presets button will show various structure presets (default, unit cell, super cell). Click next to Type to choose between the various models and assemblies available.</p>
+<h4 id="how-do-i-color-a-structure-by-the-rainbowspectrum-color-scheme"><strong>How do I color a structure by the rainbow/spectrum color scheme?</strong></h4>
+<p>To color an entire structure from N-terminus to C-terminus as a rainbow, go to Polymer under the <a href="../managing-the-display/#components-panel">Components Panel</a>. Click the Options button to the right, and select Set Coloring. Under this menu, select Residue Property, which will open another menu. Select Sequence Id. This will color each of the polymer chains from N- to C-terminus from blue to red color.</p>
+<h4 id="how-do-i-color-based-on-chain"><strong>How do I color based on chain?</strong></h4>
+<p>To color an entire structure based on chain, go to Polymer under the <a href="../managing-the-display/#components-panel">Components Panel</a>. Click the Options button to the right, and select Set Coloring. Under this menu, select Chain Property, which will open another menu. Select Chain Id. This will give each chain a different color.</p>
+<h4 id="how-do-i-color-a-structure-based-on-hydrophobicity"><strong>How do I color a structure based on hydrophobicity?</strong></h4>
+<p>To color an entire structure based on hydrophobicity, go to Polymer under the <a href="../managing-the-display/#components-panel">Components Panel</a>. Click the Options button to the right, and select Set Coloring. Under this menu, select Residue Property, which will open another menu. Select Hydrophobicity. Hydrophilic residues will be colored in shades of orange and hydrophobic residues will be colored in shades of green.</p>
+<h4 id="how-do-i-color-a-whole-structure-based-on-secondary-structural-elements-alpha-helices-and-beta-strandssheets"><strong>How do I color a whole structure based on secondary structural elements (alpha helices and beta strands/sheets)?</strong></h4>
+<p>To color an entire structure based on secondary structural elements, go to Polymer under the <a href="../managing-the-display/#components-panel">Components Panel</a>. Click the Options button to the right, and select Set Coloring. Under this menu, select Residue Property, which will open another menu. Select Secondary Structure. Alpha helices will be colored pink, beta strands/sheets will be colored light orange, and all other residues will be colored while.</p>
+<h4 id="how-do-i-color-a-domain"><strong>How do I color a domain?</strong></h4>
+<p>To color a domain, use <a href="../making-selections/#selection-mode">Selection Mode</a> to select the domain using either the <a href="../navigating-by-sequence/#sequence-panel">Sequence Panel</a> or by clicking on the residues in the domain in the 3D canvas. Click the Apply Theme to Selection button and select a color. When done, click Apply Theme.</p>
+<h4 id="how-do-i-change-the-transparency-of-representations-and-surfaces"><strong>How do I change the transparency of representations and surfaces?</strong></h4>
+<p>To change the transparency, select the whole structure or part of the structure using <a href="../making-selections/#selection-mode">Selection Mode</a>. Click the Apply Theme to Selection button and change the Action to Transparency. Use the Value slider to change the transparency and click Apply Theme to finish.</p>
+<h4 id="how-do-i-hide-certain-parts-of-a-structure"><strong>How do I hide certain parts of a structure?</strong></h4>
+<p>If a component of that region does not already exist, make a selection of the region you wish to hide, and <a href="../managing-the-display/#create-component">create a component</a> out of it. Go to the <a href="../managing-the-display/#components-panel">Components Panel</a> and click the eye icon next to the component of choice to hide it. The component can be shown again by clicking the eye icon again.</p>
+<h4 id="how-do-i-change-the-representation-of-my-structure"><strong>How do I change the representation of my structure?</strong></h4>
+<p>Depending on which part of the structure you want to change representation for, choose one of the components under the <a href="../managing-the-display/#components-panel">Components Panel</a>. If you want to change the representation for a selection and a component does not exist, <a href="../managing-the-display/#create-component">create a component</a> from this selection. Select Options for the component of choice, and click Add Representation and choose the representation you desire.</p>
+<h4 id="how-do-i-show-the-surface-of-my-structure"><strong>How do I show the surface of my structure?</strong></h4>
+<p>Go to the <a href="../managing-the-display/#components-panel">Components Panel</a> and click Options for Polymer. Click Add Representation and select Gaussian Surface or Molecular Surface.</p>
+<h4 id="how-do-i-focus-on-part-of-a-structure"><strong>How do I focus on part of a structure?</strong></h4>
+<p>There are several ways to focus on part of a structure. In default mode, click on a residue in the 3D canvas or in the <a href="../navigating-by-sequence/#sequence-panel">Sequence Panel</a> to focus on it along with surrounding residues. Alternatively, click on an object listed in the <a href="../managing-the-display/#components-panel">Components Panel</a> to focus on it. If an object is currently selected, click on it in the <a href="../managing-the-display/#structure-panel">Structure Panel</a> to focus on it.</p>
+<h4 id="how-do-i-measure-distances"><strong>How do I measure distances?</strong></h4>
+<p>Select two items that you want to measure the <a href="../managing-the-display/#distance">distance</a> between. Go to the Measurements Panel, and select Add. Select Distance. The distance will be labeled in the 3D canvas and have a new menu under Controls.</p>
+<h4 id="how-do-i-measure-angles"><strong>How do I measure angles?</strong></h4>
+<p>Select three items that you want to measure the <a href="../managing-the-display/#angles">angle</a> between, making sure that the second selection is the vertex. Go to the Measurements Panel, and select Add. Select Angle. The angle will be labeled in the 3D canvas and have a new menu under Controls.</p>
+<h4 id="how-do-i-label-my-structure"><strong>How do I label my structure?</strong></h4>
+<p>Select an item that you want to <a href="../managing-the-display/#labels">label</a>. Go to the Measurements Panel, and select Add. Select Label. The label will be displayed in the 3D canvas and have a new menu under Controls.</p>
+<h4 id="how-do-i-comparesuperpose-multiple-structures"><strong>How do I compare/superpose multiple structures?</strong></h4>
+<p>The Superposition Panel allows for multiple structures to be superposed. First, visit <a href="molstar.org/viewer/">molstar.org/viewer</a> and upload two or more structures. In order to superpose by chains, select two or more polymer chains/residues from multiple structures and click “Superpose” to superpose them. In order to superpose by atoms, select one or more atoms from multiple structures and click “Superpose” to superpose them.</p>
+<p>The level of similarity between the selections in the two structures can be assessed by examining the superposed structures visually in the 3D canvas and also by monitoring the root-mean-square deviation (RMSD) displayed at the bottom of the page in the Log Panel.</p>
+<h4 id="when-would-i-use-superposition-to-compare-structures-by-chains-and-by-atoms"><strong>When would I use superposition to compare structures “by chains” and “by atoms?”</strong></h4>
+<p>There are advantages to superposing “by chains” and “by atoms.” For instance, superposing by chains is useful when seeking to align dissimilar structures. If the regions that need to be aligned are unknown, superposing by chains helps orient secondary structural elements in the 3D canvas. Another benefit of superposing by chains is aligning selected residues. This enables parts of chains (e.g., domains, active sites) to be aligned in multiple structures. In this example, the PDB IDs 6PVP and 6DVW are used. These structures represent open and closed state transient receptor proteins. It is possible to align the proteins by chain, which yields an RMSD of 3.35. When 34 residues from only one of the helices is selected from the same chain in each structure, an RMSD of 1.08 is recorded. This is a good method to reduce the RMSD.</p>
+<p><img src="../img/superpositionwholechains.png" width="400"></p>
+<p><img src="../img/superpositionchainhelices.png" width="400"></p>
+<p>Superposing by atoms is helpful when looking at the orientations of a small molecule present in multiple structures.This is an example of where superposing structures by atoms is helpful: the antibiotic structures for actinomycin 1A7Y and 1A7Z. In this structure, the core atoms that remain the same were selected in the same order, and this superposition gives an RMSD value of 0.12.</p>
+<p><img src="../img/superpositionatomsexample.png" width="400"></p>
+<p><img src="../img/superpositionatomsselections.png" width="400"></p>
+<h4 id="how-can-i-improve-the-rmsd-value-for-my-superposition"><strong>How can I improve the RMSD value for my superposition?</strong></h4>
+<p>When superposing structures, an RMSD value is given that is calculated from the superposed regions. The lower the number the better the match between the regions compared. It is up to the user which regions they want to superpose, depending on their research question. However, there are a few ways to improve the superposition and RMSD value.</p>
+<p>If you have superimposed your structures by chain, the RMSD value for that alignment may be large if some of the loops or termini of these structures are not well aligned.. In this case, it may be valuable to limit the selections to certain regions of the chains, such as secondary structures like alpha helices or beta sheets.</p>
+<p><img src="../img/chainrmsdbefore.png" width="400"></p>
+<p>In this example, in a superposition of the structures 1D0T and 1D0U, the whole chain is selected for both structures to align them. This gives an RMSD value of 1.62.</p>
+<p>Now, when only a portion of the sequence is selected to align the structures, an RMSD value of 1.41 is obtained.</p>
+<p><img src="../img/chainrmsdafter.png" width="400"></p>
+<p>If you are superposing the structures by atoms, you can conduct a similar process. It is important to note that a lower RMSD value may not mean an overall better superposition. Again, it is up to the researcher to decide what they want to superpose.</p>
+<p>Using the example of the structures 1A7Y and 1A7Z, if only three pairs of atoms are chosen to superpose the structures, an RMSD value of 0.01 is observed, but the rest of the structure is not as well aligned.</p>
+<p><img src="../img/atomrmsdbefore.png" width="400"></p>
+<p>Now if we choose 6 pairs of atoms from across the molecule, then a higher RMSD value of 0.50 is obtained, but there is a neater overall alignment of the two structures.</p>
+<p><img src="../img/atomsrmsdafter.png" width="400"></p>
+<p>It is up to the user on how to optimize the superposition of the structures.</p>
+<h4 id="how-do-i-represent-my-ligand-when-it-is-a-peptide-like-molecule"><strong>How do I represent my ligand when it is a peptide-like molecule?</strong></h4>
+<p>Sometimes, when a structure is loaded, a portion of the structure may have multiple representations, and changing the representation doesn’t fix the problem. In this case, it is helpful to empty out all the preset components and create them again with the representation you desire. In this example, we will use the structure (6LU7) for the SARS-CoV-2 main protease with an inhibitor N3. When you pull up this structure, it shows the whole structure with the inhibitor as well.</p>
+<p><img src="../img/6lu7before.png" width="400"></p>
+<p>The inhibitor is shown in ball-and-stick form, as the Components Panel suggests, but there is also a cartoon backbone that is not hidden by trying to make the representation of the ligand ball-and-stick.</p>
+<p><img src="../img/6lu7inhibitorbefore.png" width="400"></p>
+<p>In this case, the best plan of action is to empty the preset components, and this clears the 3D canvas.</p>
+<p><img src="../img/emptycomponents.png" width="400"></p>
+<p>Then select the chain of whichever component you will be creating. In this case, I chose the ligand, and selected the chain in the Sequence Panel. Then create a component in the Selection Mode toolbar as shown below.</p>
+<p><img src="../img/inhibitorsequence.png" width="800"></p>
+<p><img src="../img/inhibitornewcomponent.png" width="400"></p>
+<p>At this point the ligand shows in the 3D canvas as a ball-and-stick representation without the cartoon showing.</p>
+<p><img src="../img/final6lu7inhibitor.png" width="400"></p>
+<p>At this point, a covalent bond to a cysteine on the protein from the ligand does not show. There are a few ways to fix this. You can either zoom into the structure in default mode by focusing on the residues near this bond. You can also make a component of the residues involved in the bond, and show them using a ball-and-stick representation.</p>
+<h4 id="how-do-i-change-the-color-or-representation-of-one-chain-in-the-structure"><strong>How do I change the color or representation of one chain in the structure?</strong></h4>
+<p>The easiest way to do this is to make a component of the chain you are trying to change. In the Components Panel, you can then select the component of the chain to change its color or representation. For example, PDB structure 6lu7 depicts the main protease of SARS-CoV-2 with an inhibitor N3. The biological assembly contains two identical chains (which we will call chain A ASM_1 and chain A ASM_2). When this structure is opened in Mol*, both chains are colored green and are shown in the ribbon representation. Suppose you wanted to show the molecular surface only chain A ASM_1and color it based on hydrophobicity. The first step is to select the entirety of chain A ASM_1 and create a component of it. To change the representation, open the components menu for the chain A ASM_1 component (shown in a black box with a dashed line in the image below ). Use the Add Representation menu and click on “molecular surface.” The display should look like the following:</p>
+<p><img src="../img/faq1.png" width="400"></p>
+<p>Next, we change the color of chain A ASM_1 by opening up the components menu for the chain A ASM_1 component and using the Set Coloring menu and click on “hydrophobicity.” As can be seen in the image below, the coloring and representation changes have been applied to only chain A ASM_1 and not chain A ASM_2.</p>
+<p><img src="../img/faq2.png" width="400"></p>
+<h4 id="how-do-i-show-hydrogen-bonds-non-covalent-interactions"><strong>How do I show hydrogen bonds (non-covalent interactions)?</strong></h4>
+<p>In order to show any non-covalent interactions, the components’ representations need to be adjusted. Non-covalent interactions is one of the representations available if you click Add Representation for any of the components. The non-covalent interactions that are shown can be modified using the options under the button next to Add in the <a href="../managing-the-display/#components-panel">Components Panel</a>. Once Non-covalent Interactions is clicked on, a drop-down menu will show the various non-covalent interactions that can be toggled on and off for viewing.</p>
+<p><img src="../img/non-covalentinteractionchoices.png" width="200"></p>
+<p>Once this is decided, non-covalent interactions can be added as a representation. For this example, non-covalent interactions for the entire polymer of 3PQR will be shown. For reference, the structure looks like this prior to adding representations to the cartoon representation of the polymer.</p>
+<p><img src="../img/3pqrnointeractions.png" width="400"></p>
+<p>At this point, click on Polymer, and click Add Representation. To be able to visualize the atoms that are involved in the non-covalent interactions, turn on both the Ball &amp; Stick and Non-covalent Interactions. Now there should be three representations, and the structure should look like this.</p>
+<p><img src="../img/3pqrrepresentations.png" width="200"></p>
+<p><img src="../img/3pqrw_interactions.png" width="400"></p>
+<p>Now if you want to see what interaction is being shown, mouse over the interaction, and it will show in the bottom right corner of the 3D canvas.</p>
+<h4 id="how-do-i-tweak-the-hydrogen-bond-distance-threshold"><strong>How do I tweak the hydrogen bond distance threshold?</strong></h4>
+<p>In order to change the parameters for hydrogen bonds, or any other non-covalent interactions, click on the Options button in the Components panel, and click on the options button for any of the interactions you want to tweak the parameters for. Once this is done, there are various options for tweaking the parameters. Clicking on the question mark for any of the options will give a short description of what that option is responsible for calculating.</p>
+<p><img src="../img/hydrogenbondsthreshold.png" width="400"></p>
+<h4 id="how-to-display-the-interactions-of-a-ligand-with-amino-acids-and-ligands-bound-nearby"><strong>How to display the interactions of a ligand with amino acids and ligands bound nearby?</strong></h4>
+<p>If you want to show the interactions nearby a ligand, including the hydrogen bonding and any other kinds of bonding, you need to focus on the target first. For example, if you want to show how a ligand binds to a protein, and you want to color the surrounding residues while showing the interactions, there are a set of steps to follow in a specific order.</p>
+<p>First you need to focus on the target ligand. In this example, the structure 4HHB will be used. If you want to show the heme group and its interactions with the hemoglobin structure, first you need to focus on the heme group. Make sure you are in the default mode and click on the heme group in the 3D canvas. This will focus on the heme group and show the interactions with the residues around it.</p>
+<p><img src="../img/4hhbhemefocus.png" width="400"></p>
+<p>Now the interactions between the heme group and the protein are shown. If you click away from this, the structure will unfocus and go back to the starting display. You will need to focus again. To color the heme group one color and the surrounding residues a separate color, these are the steps that can be taken. In order to first color the heme group, you will need to select it. Click open the Selection Mode toolbar. Select the heme group by clicking on it in the 3D canvas. Now color it the desired color using the color tool in the Selection Mode toolbar, and clicking Apply Theme.</p>
+<p><img src="../img/4hhbhemecolor.png" width="400"></p>
+<p>Now to invert the selection to the surrounding 5 Å of residues, in the Selection Mode toolbar, go to Set Selection, then Manipulate Selection, and choose Surrounding Residues (5 Å) of Selection. It should look like the following.</p>
+<p><img src="../img/4hhbsurroundingresiduesselection.png" width="400"></p>
+<p>Now color this selection as before to the color of your choosing. If you deselect everything, you will see an image like the following.</p>
+<p><img src="../img/4hhbsurroundingresiduescolor.png" width="400"></p>
+<p>You can now save this image using the Screenshot / State Snapshot option in the toggle menu.</p>
+<h4 id="if-i-have-multiple-structures-uploaded-how-can-i-toggle-between-the-display-of-the-structures"><strong>If I have multiple structures uploaded, how can I toggle between the display of the structures?</strong></h4>
+<p>It can be tricky dealing with multiple structures. To make it simpler, it is important to know how to display only one structure at a time, and to be familiar with switching between which structure is displayed. After the structures are uploaded, you’ll need to use the Structure Panel and Components Panel to do this. In the example below, PDB structures 6lu7 (SARS-CoV-2 main protease bound by an inhibitor) and 6yb7 (SARS-CoV-2 main protease with an unliganded active site) were uploaded at rcsb.org/3D-view. A simple <a href="../managing-the-display/#superposition-panel">superposition</a> using chain A ASM_1 in each structure was performed to overlay the two structures. The Mol* page should look like the following image, with 6lu7 shown in green and 6yb7 shown in purple:</p>
+<p><img src="../img/faq3.png" width="400"></p>
+<p>Next, we want to hide one of the structures while showing the other structure. Suppose the structure we want to hide is 6lu7. To do this, go into the Structure Panel and locate the Structures menu. This menu lists each structure uploaded into Mol*. Clicking on one of the structures in this menu will show the components for just that structure in the Components Panel. We want to see the components for only 6lu7 so we can opt to hide them. In the Structures menu, click on “None” to deselect both structures, then click on “6LU7 | Assembly 1” to display its components. The Structures menu should look like the following image:</p>
+<p><img src="../img/faq4.png" width="200"></p>
+<p>Then go to the Components Panel where it lists the components of only 6lu7. Click the “eye” icon to hide each component. In the 3D canvas, you should only see 6yb7.</p>
+<p>Next, suppose we want to show 6lu7 and hide 6yb7. First, we need to reshow the components of 6lu7. To do this, go the Structures menu in the Structure Panel and select only 6lu7. Then, use the Components Panel to show the components of 6lu7. In the 3D canvas, you should see both structures. To hide 6yb7, use the Structures menu to select only 6yb. It should look like the following image:</p>
+<p><img src="../img/faq5.png" width="200"></p>
+<p>Then go to the Components Panel where it lists the components of only 6yb7. Click the “eye” icon to hide each component. In the 3D canvas, you should only see 6lu7.</p>
+<p>Based on the <a href="https://www.rcsb.org/3d-view/molstar/help/getting-started">RCSB PDB mol* documentation</a> thanks to the generosity of RCSB PDB and Dr. Shuchismita Dutta.</p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../examples/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Examples
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../glossary/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Glossary
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking"], "search": "../assets/javascripts/workers/search.217ffd95.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.926459b3.min.js"></script>
+      
+    
+  </body>
+</html>
