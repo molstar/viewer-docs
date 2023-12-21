@@ -1,1 +1,4 @@
 site/
+
+# MacOS junk:
+.DS_Store
